@@ -1,0 +1,6 @@
+<aiml>
+  <category>
+    <pattern>What is your name?</pattern>
+    <template>My name is Bianca.</template>
+  </category>
+</aiml>
