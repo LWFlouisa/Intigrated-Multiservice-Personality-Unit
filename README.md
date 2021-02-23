@@ -9,3 +9,8 @@ Personality unit must:
 -- Able to perform basic human small talk communication.<br />
 -- Perform simple "expert systems" commands like Family Tree search.<br />
 -- Able to browse the web through terminal version of common websites. Including Yacy.<br />
+
+## Other features
+
+-- A full constructed language model: https://github.com/LWFlouisa/hafestrometre
+-- An example of embedded AI: https://github.com/LWFlouisa/gallery
