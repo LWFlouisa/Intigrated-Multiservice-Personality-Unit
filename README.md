@@ -10,7 +10,7 @@ Personality unit must:
 -- Perform simple "expert systems" commands like Family Tree search.<br />
 -- Able to browse the web through terminal version of common websites. Including Yacy.<br />
 
-## Other features
+Other features
 
--- A full constructed language model: https://github.com/LWFlouisa/hafestrometre
+-- A full constructed language model: https://github.com/LWFlouisa/hafestrometre<br />
 -- An example of embedded AI: https://github.com/LWFlouisa/gallery
