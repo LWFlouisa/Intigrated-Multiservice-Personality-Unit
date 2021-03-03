@@ -323,12 +323,31 @@ def expert_systems
 end
 
 def search_engine;
-  def yacy_server; system("cd yacy; ./startYACY.sh"); end
-  def yacy_search;                    system("yacy"); end
-end
+  require "duck_duck_go"
 
-def play_crawl
-  system("crawl")
+  number = 0
+
+  print "Search >> "; query_list = gets.chomp.split(" ")
+
+  each_item.times do
+    search = query_list[number]
+    search_name = search.tr " ", "_"
+
+    ddg = DuckDuckGo.new
+    zci = ddg.zeroclickinfo(search) # ZeroClickInfo object
+
+    header   = zci.heading
+    abstract = zci.abstract_text
+    related  = zci.related_topics["_"][0].text
+
+    open("searches/#{search_name}.txt", "w") {
+      f.puts header
+      f.puts abstract
+      f.puts related
+    }
+
+    number = number + 1
+  end
 end
 
 require "programr"
