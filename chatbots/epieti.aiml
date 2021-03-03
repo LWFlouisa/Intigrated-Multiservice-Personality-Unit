@@ -1,0 +1,17 @@
+<!--This is the Hafestran language for pets.-->
+<aiml>
+  <category>
+    <pattern>Gehi avieru yona *.</pattern>
+    <template>Vio avieru yona <star />.</template>
+  </category>
+  
+  <category>
+    <pattern>Gehi avieru yonei *.</pattern>
+    <template>Vio avieru yonei <star />.</template>
+  </category>
+  
+  <category>
+    <pattern>Gehi avieru yonas *.</pattern>
+    <template>Vio avieru yonas <star />.</template>
+  </category>
+</aiml>

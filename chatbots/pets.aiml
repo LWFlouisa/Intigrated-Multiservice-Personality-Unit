@@ -1,0 +1,20 @@
+<aiml>
+  <category>
+    <pattern>I have a dog.</pattern>
+    <template><think><set name="state">sad</set></think>You have a dog?</template>    
+  </category>
+
+  <category>
+    <pattern>I have a cat.</pattern>
+    <template><think><set name="state">happy</set></think>You have a cat?</template>     
+  </category>
+
+  <category>
+    <pattern>How are you feeling today?</pattern>
+    <template>
+      <condition name ="state" value ="happy">I am happy!</condition>
+      <condition name ="state" value ="sad">I am sad!</condition>
+      <condition name ="state" value ="">I'm not sure.</condition>
+    </template>    
+  </category>
+</aiml>

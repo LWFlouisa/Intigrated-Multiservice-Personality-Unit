@@ -1,0 +1,12 @@
+<!--This is the Hafestran language version of saying your name.-->
+<aiml>
+  <category>
+    <pattern>Mia enamo isi *</pattern>
+    <template>Via esionti <star />.</template>
+  </category>
+  
+  <category>
+    <pattern>Mia ename isi *</pattern>
+    <template>Via esionti <star />.</template>
+  </category>
+</aiml>
