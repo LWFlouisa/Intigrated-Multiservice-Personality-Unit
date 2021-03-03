@@ -8,7 +8,6 @@ Personality unit must:
 -- Is embeddable inside of common software applications.<br />
 -- Able to perform basic human small talk communication.<br />
 -- Perform simple "expert systems" commands like Family Tree search.<br />
--- Able to browse the web through terminal version of common websites. Including Yacy.<br />
 
 Other features
 
