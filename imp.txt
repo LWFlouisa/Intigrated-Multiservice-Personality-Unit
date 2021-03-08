@@ -26,6 +26,32 @@ def date
   AM / PM  [9]
 
   >> "; numeral = gets.chomp.to_i
+  
+  if numeral > 9.0
+    numeral = 0
+  end
+
+  attributes = ['Temperature']
+  training = [
+    [1.0,     'year'], [2.0,    'month'], [3.0,      'day'],
+    [4.0,  'century'], [5.0,     'hour'], [6.0,   'minute'],
+    [7.0,   'second'], [8.0, 'timezone'], [9.0,    'am_pm'],
+  ]
+
+  dec_tree = DecisionTree::ID3Tree.new(attributes, training, 1, :continuous)
+  dec_tree.train
+
+  test = [numeral]
+  decision = dec_tree.predict(test)
+  
+  puts "Predicted: #{decision} ... True decision: #{test.last}"
+  
+  if    decision ==     "year";     year; elsif decision ==    "month";    month;
+  elsif decision ==      "day";      day; elsif decision ==  "century";  century;
+  elsif decision ==     "hour";     hour; elsif decision ==   "minute";   minute;
+  elsif decision ==   "second";   second; elsif decision == "timezone"; timezone;
+  elsif decision ==    "am_pm";    am_pm;
+  end
 end
 
 def word_statistics
